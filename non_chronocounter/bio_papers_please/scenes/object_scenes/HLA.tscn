@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://58cqc16wkni6"]
+
+[ext_resource type="Texture2D" uid="uid://cj6wfoi8f7tqt" path="res://graphics/HLA.png" id="1_mxee7"]
+[ext_resource type="Script" path="res://scripts/button_pass_self.gd" id="2_7h64i"]
+
+[node name="HLA" type="TextureButton"]
+texture_normal = ExtResource("1_mxee7")
+script = ExtResource("2_7h64i")
+
+[node name="LeftText" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 17.0
+offset_right = 248.0
+offset_bottom = 45.0
+mouse_filter = 1
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center]WWWWWWWWWWWWW[/center]"

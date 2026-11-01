@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgsys8stxkoga"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_jbsfy"]
+load_path = "res://.godot/imported/AcceptButton.png-fd57c902a720f4ee1e705b2aafe9ea3c.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_xviws"]
+load_path = "res://.godot/imported/AcceptButtonPressed.png-75758b43e56a98707c0d934f31d380cb.ctex"
+
+[node name="AButton" type="TextureButton"]
+offset_right = 256.0
+offset_bottom = 128.0
+texture_normal = SubResource("CompressedTexture2D_jbsfy")
+texture_pressed = SubResource("CompressedTexture2D_xviws")
+stretch_mode = 0

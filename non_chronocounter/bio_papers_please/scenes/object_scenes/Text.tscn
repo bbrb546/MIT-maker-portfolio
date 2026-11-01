@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://b11vrsl5lbbqy"]
+
+[ext_resource type="Texture2D" uid="uid://612rruo13amw" path="res://graphics/TextPlaceholder/TextPlaceholder.png" id="1_wcxf3"]
+[ext_resource type="Script" path="res://scripts/button_pass_self.gd" id="2_thts8"]
+
+[node name="Text" type="TextureButton"]
+texture_normal = ExtResource("1_wcxf3")
+script = ExtResource("2_thts8")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmd48to0wb8fa"]
+
+[ext_resource type="Script" path="res://scripts/clear_data.gd" id="1_cmnu1"]
+
+[node name="clear_data" type="Node2D"]
+script = ExtResource("1_cmnu1")

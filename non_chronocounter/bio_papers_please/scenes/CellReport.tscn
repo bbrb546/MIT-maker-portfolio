@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgwa8x06l18jy"]
+
+[ext_resource type="Texture2D" uid="uid://dyk30m2au65g7" path="res://graphics/CellReport.png" id="1_ftv3j"]
+[ext_resource type="Script" path="res://scripts/button_pass_self.gd" id="2_5bt31"]
+
+[node name="CellReport" type="TextureButton"]
+texture_normal = ExtResource("1_ftv3j")
+script = ExtResource("2_5bt31")
+
+[node name="TopText" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 5.0
+offset_right = 248.0
+offset_bottom = 45.0
+mouse_filter = 1
+theme_override_colors/default_color = Color(0.537255, 0.537255, 0.537255, 1)
+theme_override_font_sizes/normal_font_size = 19
+bbcode_enabled = true
+text = "[center] INSTRUCTIONS [/center]
+"
+
+[node name="BottomText" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 29.0
+offset_right = 248.0
+offset_bottom = 248.0
+mouse_filter = 1
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 15
+bbcode_enabled = true
+text = "You are a white blood cell in the bloodstream. Your job is to identify bacteria disguised as normal cells and destroy them.
+
+Press the [color=yellow]yellow button[/color] in the top-right corner to investigate a cell. You will receive a glycocalyx ID from the cell to review.
+
+Then, press the [color=green]green button[/color] to allow the cell to live if its ID is in order or the [color=red]red button[/color] to kill the cell if its ID is incorrect.
+
+You gain 1 score for each correct judgement and lose 1 score for each incorrect judgement.
+
+Normal cells may contain up to 1 mistake in the ID, while bacteria will always contain 2 mistakes (like a typo). If you aren't sure about a cell's status, you may compare the Human Leukocyte Antigen (HLA) code of the cell and the valid HLA codes. Press the [color=gray]light blue circle[/color] to summon the HLA code of the cell and the [color=blue]dark blue crescent[/color] to summon the valid codes.
+
+It costs 1 score to summon the HLA codes of a cell and 2 score to summon the valid HLA codes. The latter document will remain for the rest of the game if summoned.
+
+If your score goes below -10, your body will die to the bacteria, but if it increases beyond 15, your body will overcome the bacteria."

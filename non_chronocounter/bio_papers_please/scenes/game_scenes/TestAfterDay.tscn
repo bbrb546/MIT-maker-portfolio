@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://g7erxjr5bf78"]
+
+[ext_resource type="Script" path="res://scripts/TestAfterDay.gd" id="1_u5qo5"]
+[ext_resource type="Texture2D" uid="uid://o8qpvvxxsqet" path="res://graphics/MButton/Button.png" id="2_v7r4f"]
+[ext_resource type="Texture2D" uid="uid://pji4rd78ns4a" path="res://graphics/MButton/ButtonPressed.png" id="3_8fqyv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ue2s4"]
+font_size = 26
+
+[node name="TestAfterDay" type="Node2D"]
+script = ExtResource("1_u5qo5")
+
+[node name="MoneyDisplay" type="Label" parent="."]
+offset_left = 504.0
+offset_top = 280.0
+offset_right = 719.0
+offset_bottom = 319.0
+text = "You have dollars!"
+label_settings = SubResource("LabelSettings_ue2s4")
+
+[node name="Gain" type="Label" parent="."]
+offset_left = 552.0
+offset_top = 256.0
+offset_right = 674.0
+offset_bottom = 282.0
+text = "+ some number"
+
+[node name="ContinueButton" type="TextureButton" parent="."]
+offset_left = 480.0
+offset_top = 376.0
+offset_right = 736.0
+offset_bottom = 504.0
+texture_normal = ExtResource("2_v7r4f")
+texture_pressed = ExtResource("3_8fqyv")

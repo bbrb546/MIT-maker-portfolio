@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://c31vruiaq7hq"]
+
+[ext_resource type="Texture2D" uid="uid://vsil8m4khxwc" path="res://graphics/Glycocalyx.png" id="1_utmg3"]
+[ext_resource type="Script" path="res://scripts/button_pass_self.gd" id="2_33trs"]
+
+[node name="Glycocalyx" type="TextureButton"]
+texture_normal = ExtResource("1_utmg3")
+script = ExtResource("2_33trs")
+
+[node name="Title" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 10.0
+offset_right = 173.0
+offset_bottom = 37.0
+mouse_filter = 1
+theme_override_colors/default_color = Color(1, 0.8, 0.45098, 1)
+theme_override_font_sizes/normal_font_size = 19
+text = "GLYCOCALYX"
+
+[node name="LeftText" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 48.0
+offset_right = 240.0
+offset_bottom = 236.0
+mouse_filter = 1
+theme_override_colors/default_color = Color(1, 0.717647, 0.00784314, 1)
+text = "TYPE
+
+REASON
+
+LOCATION
+
+STAGE"
+
+[node name="RightText" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 68.0
+offset_right = 240.0
+offset_bottom = 244.0
+mouse_filter = 1
+bbcode_enabled = true
+text = "White blood cell
+
+Transporting oxygen
+
+Placeholder
+
+Placeholder"
+scroll_active = false
