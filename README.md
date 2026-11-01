@@ -9,6 +9,8 @@ The six scripts that make up the server are located in scripts/server/, and vari
 
 The Biology visual novel project is located in non_chronocounter/bio_visual_novel/ and the Papers Please immune system project is located in non_chronocounter/bio_papers_pleaes/. The automatic linear equation solver is non_chronocounter/autosolvelinear.py.
 
+The compiled .exe versions of the Biology visual novel and Papers Please game are located in non_chronocounter.
+
 # AI Acknowledgement
 
 All code and art in Chronocounter was made with the help of assistive tools including Github Copilot, ChatGPT, Claude, Pi agent harness, and Codex. The code and art in non_chronocounter projects were primarily human-made but parts may have been made with assistive tools as well.
